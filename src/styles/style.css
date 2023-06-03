@@ -1,1 +1,312 @@
-/* ------------------------------- Coloque sua estilização aqui ------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family= Inter & display=swap');
+
+:root{
+--brand1: #4c6ef5;
+--brand2: #364FC7;
+--grey0: #191c1f;
+--grey1: #212529;
+--grey2: #343A40;
+--grey3: #ADB5BD;
+--grey4: #CED4DA;
+--grey5: #F8F9FA;
+
+--FontWeightTitle1: 600;
+--FontWeightTitle2: 600;
+--FontWeightTitle3: 400;
+
+--FontSizeTitle1: 52px;
+--FontSizeTitle2: 40px;
+--FontSizeTitle3: 32px;
+
+--LineWeightTitle1: 72px;
+--LineWeightTitle2: 64px;
+--LineWeightTitle3: 44px;
+
+--FontWeightText1: 400;
+--FontWeightText2: 400;
+--FontWeightText3: 400;
+
+--FontSizeText1: 28px;
+--FontSizeText2: 20px;
+--FontSizeText3: 18px;
+
+--LineWeightText1: 44px;
+--LineWeightText2: 30px;
+--LineWeightText3: 27px;
+}
+
+body{
+    margin: 0;
+    color: var(--grey5);
+    font-family: 'Inter', sans-serif;
+}
+
+.headerPrincipal{
+    position: fixed;
+    display: flex;
+    background-color: var(--grey0);
+    border-bottom: 2px solid var(--brand1);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    gap: 200px;
+}
+
+.titleHeader{
+    color: var(--grey5);
+    font-size: 20px;
+}
+
+.buttonHeader{
+    background-color: var(--grey1);
+    color: var(--grey5);
+    padding: 10px;
+    border: 0.5px solid;
+    cursor: pointer;
+}
+
+.buttonHeader:hover{
+    color: black;
+    background-color: white;
+}
+
+.container_primary{
+    text-align: center;
+    background-color: var(--grey1);
+    padding: 170px 170px 170px 170px;
+}
+
+.container_primary_title{
+    font-weight: var(--FontWeightTitle1);
+    font-size: var(--FontSizeTitle1);
+    line-height: var(--LineWeightTitle1);
+}
+
+.container_primary_title_span{
+    color: var(--brand1);
+}
+
+.container_primary_text{
+    font-weight: var(--FontWeightText3);
+    font-size: var(--FontSizeText3);
+    line-height: var(--LineWeightText3);
+    color: var(--grey3);
+    padding-bottom: 20px;
+}
+
+.button_container_primary{
+    background-color: var(--brand1);
+    color: var(--grey5);
+    padding: 15px;
+    border: none;
+}
+
+.button_container_primary:hover{
+    cursor: pointer;
+    background-color: var(--brand2);
+}
+
+.container_secondary{
+    display: grid;
+    padding: 50px 350px 50px 300px;
+    background-color: var(--grey0);
+    align-items: center;
+}
+
+.container_secondary_h2{
+    font-weight: var(--FontWeightTitle3);
+    font-size: var(--FontSizeTitle3);
+    line-height: var(--LineWeightText3);
+    grid-column-start: 1;
+}
+
+.container_secondary_text{
+    font-weight: var(--FontWeightText2);
+    font-size: var(--FontSizeText2);
+    line-height: var(--LineWeightText2);
+    color: var(--grey4);
+    width: 611px;
+    margin-right: -700px;
+    grid-column-start: 2;
+}
+
+.container_duvidas_principal{
+    padding: 0px 120px 0px 160px;
+    grid-column-start: 1;
+}
+
+.container_duvidas{
+    display: grid;
+    background-color: var(--grey1);
+    padding: 40px 115px 0px 135px;
+    grid-column-start: 2;
+}
+
+.container_duvidas_title{
+    font-weight: var(--FontWeightTitle2);
+    font-size: var(--FontSizeTitle2);
+    line-height: var(--LineWeightTitle2);
+    padding-top: 30px;
+}
+
+.container_duvidas_text{
+    font-weight: var(--FontWeightText3);
+    font-size: var(--FontSizeText3);
+    line-height: var(--LineWeightText3);
+    margin-bottom: 35px;
+}
+
+.container_duvidas_perg_resp{
+    font-weight: var(--FontWeightText2);
+    font-size: var(--FontSizeText2);
+    line-height: var(--LineWeightText2);
+    padding: 0px 150px 0px 45px;
+}
+
+.container_duvidas_perg{
+    font-weight: var(--FontWeightText1);
+    font-size: var(--FontSizeText1);
+    line-height: var(--LineWeightText1);
+    text-align: center;
+}
+
+.container_duvidas_resp{
+    color: var(--grey3);
+}
+
+.container_duvidas_button{
+    background-color: var(--brand1);
+    color: var(--grey5);
+    padding: 15px;
+}
+
+.container_duvidas_button:hover{
+    background-color: var(--brand2);
+    cursor: pointer;
+}
+
+.container_tertiary{
+    display: grid;
+    background-color: var(--grey1);
+    padding-top: 100px;
+    grid-template-columns: auto auto;
+}
+
+.container_tertiary_ul{
+    display: grid;
+    gap: 50px;
+    margin-left: 150px;
+    padding-bottom: 70px;
+    list-style: none;
+}
+
+.container_tertiary_ul_nameAlunos{
+    grid-column: 1;
+    font-size: 22px;
+}
+
+.container_tertiary_ul_textAlunos{
+    margin-left: 250px;
+    margin-top: -75px;
+    grid-column: 2;
+    width: 700px;
+}
+
+.container_tertiary_ul_nameAlunos_p{
+    color: var(--grey4);
+}
+
+.container_tertiary_box{
+    display: grid;
+    background-color: var(--brand1);
+    width: 400px;
+    height: 350px;
+    margin: 0px 350px 0px 0px;
+}
+
+.container_tertiary_box_title{
+    padding: 50px 0px 0px 50px;
+    width: 300px;
+}
+
+.container_tertiary_box_text{
+    padding: 0px 25px 0px 50px;
+    margin-top: -80px;
+    width: 300px;
+}
+
+.container_botton{
+    display: flex;
+    background-color: var(--grey0);
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.modalContainer{
+    background-color: var(--grey1);
+    border: 3px solid var(--brand1);
+    width: 500px;
+    height: 400px;
+}
+
+.modalContainer::backdrop{
+    background-color: rgba(25, 28, 31, 0.8);
+}
+
+.modalContainer_principal{
+    padding: 50px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.modalContainer_title{
+    color: var(--grey5);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--FontSizeText1);
+    align-items: center;
+    margin-top: -10px;
+}
+
+.buttonCloseModal{
+    border: none;
+    background-color: var(--grey2);
+    font-size: 25px;
+    padding: 2px 10px 0px 10px;
+    color: var(--grey3);
+    border-radius: 4px;
+}
+
+.buttonCloseModal:hover{
+    background-color: var(--grey3);
+    color: var(--grey2);
+    cursor: pointer;
+}
+
+.modalContainer_text{
+    color: var(--grey3);
+    margin-top: -20px;
+}
+
+.addEmail{
+    border: none;
+    background-color: var(--grey0);
+    padding: 14px 20px 14px 20px;
+    font-size: 20px;
+    color: var(--grey3);
+}
+
+.modalContainer_sendEmail{
+    border: none;
+    background-color: var(--brand1);
+    color: var(--grey5);
+    padding: 14px 0px 14px 0px;
+}
+
+.modalContainer_sendEmail:hover{
+    cursor: pointer;
+    background-color: var(--brand2);
+}
